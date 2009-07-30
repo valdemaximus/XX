@@ -1,0 +1,4 @@
+= xx
+
+== Install
+  gem install xx --source http://gems.github.com
