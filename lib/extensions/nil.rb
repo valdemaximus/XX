@@ -14,4 +14,7 @@ class NilClass
   def not_empty?
     false
   end
+  
+  alias :blank? :empty?
+  alias :not_blank? :not_empty?
 end
