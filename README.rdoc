@@ -2,3 +2,11 @@
 
 == Install
   gem install valdemaximus-xx --source http://gems.github.com
+
+== Build and Deploy
+  (update the version number in the Rakefile)
+  rake manifest
+  rake build_gemspec
+  git push github master
+  or
+  git push origin master
