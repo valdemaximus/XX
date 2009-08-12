@@ -3,6 +3,7 @@ lib/extensions/array.rb
 lib/extensions/hash_key.rb
 lib/extensions/nil.rb
 lib/extensions/object.rb
+lib/extensions/parse.rb
 lib/extensions/pp_s.rb
 lib/extensions/string.rb
 lib/xx.rb
