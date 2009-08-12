@@ -7,6 +7,7 @@
   (update the version number in the Rakefile)
   rake manifest
   rake build_gemspec
+  git commit -a -m "..."
   git push github master
   or
   git push origin master
