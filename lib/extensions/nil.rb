@@ -15,6 +15,10 @@ class NilClass
     false
   end
   
+  def length
+    0
+  end
+  
   alias :blank? :empty?
   alias :not_blank? :not_empty?
 end

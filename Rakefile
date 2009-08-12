@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('xx', '0.1.6') do |p|
+Echoe.new('xx', '0.1.7') do |p|
   p.description    = "Extensions of standard ruby objects"
   p.url            = "http://github.com/valdemaximus/xx"
   p.author         = "Tom Johnson"
