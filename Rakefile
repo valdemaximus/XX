@@ -1,19 +1,21 @@
 require 'rubygems'
 require 'rake'
 require 'jeweler'
+require 'rdoc/rdoc'
+require 'rake/rdoctask'
 
-# require 'echoe'
-# 
-# Echoe.new('xx', '0.1.7') do |p|
-#   p.description    = "Extensions of standard ruby objects"
-#   p.url            = "http://github.com/valdemaximus/xx"
-#   p.author         = "Tom Johnson"
-#   p.email          = "valde.maximus@gmail.com"
-#   p.ignore_pattern = ["tmp/*", "script/*"]
-#   p.development_dependencies = []
-# end
+gem 'darkfish-rdoc'
+require 'darkfish-rdoc'
 
-# Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each
+Rake::RDocTask.new do |rdoc|
+    rdoc.title    = "MyFantasticLibrary - a library of utter fantasticness"
+    rdoc.rdoc_files.include 'README'
+
+    rdoc.options += [
+        '-SHN',
+        '-f', 'darkfish',  # This is the important bit
+      ]
+end
 
 begin
   require 'jeweler'
