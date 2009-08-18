@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{xx}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Johnson"]
-  s.date = %q{2009-08-15}
+  s.date = %q{2009-08-18}
   s.description = %q{Extensions of standard ruby objects}
   s.email = %q{valde.maximus@gmail.com}
   s.extra_rdoc_files = [
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "lib/extensions/parse.rb",
      "lib/extensions/pp_s.rb",
      "lib/extensions/string.rb",
+     "lib/extensions/time.rb",
      "lib/xx.rb",
      "xx.gemspec"
   ]
