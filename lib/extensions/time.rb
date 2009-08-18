@@ -1,5 +1,9 @@
 class Time
+  def blank?
+    false
+  end
+  
   def not_blank?
-    !blank?
+    true
   end
 end
