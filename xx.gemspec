@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{xx}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Johnson"]
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
      "lib/extensions/string.rb",
      "lib/extensions/time.rb",
      "lib/xx.rb",
+     "test/tc_time.rb",
      "xx.gemspec"
   ]
   s.homepage = %q{http://github.com/valdemaximus/xx}
@@ -38,6 +39,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Extensions of standard ruby objects}
+  s.test_files = [
+    "test/tc_time.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
