@@ -19,17 +19,17 @@ class Hash
       elsif value.class == Hash
         value.each_pair do |k, v|
           if curr_path.nil?
-            node(k,v, elements, CGI::escape(key.to_s))
+            url_node(k,v, elements, CGI::escape(key.to_s))
           else
-            node(k,v, elements, curr_path + "[#{CGI::escape(key.to_s)}]")
+            url_node(k,v, elements, curr_path + "[#{CGI::escape(key.to_s)}]")
           end
         end
       elsif value.class == Array
         value.each do |v|
           if curr_path.nil?
-            node('',v, elements, CGI::escape(key.to_s))
+            url_node('',v, elements, CGI::escape(key.to_s))
           else
-            node('',v, elements, curr_path + "[#{CGI::escape(key.to_s)}]")
+            url_node('',v, elements, curr_path + "[#{CGI::escape(key.to_s)}]")
           end
         end
       end
