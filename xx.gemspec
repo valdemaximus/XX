@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{xx}
-  s.version = "0.2.2"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Johnson"]
-  s.date = %q{2009-08-18}
+  s.date = %q{2009-08-21}
   s.description = %q{Extensions of standard ruby objects}
   s.email = %q{valde.maximus@gmail.com}
   s.extra_rdoc_files = [
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "init.rb",
      "lib/extensions/array.rb",
+     "lib/extensions/hash.rb",
      "lib/extensions/hash_key.rb",
      "lib/extensions/nil.rb",
      "lib/extensions/object.rb",
