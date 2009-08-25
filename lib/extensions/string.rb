@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'activesupport'
+# require 'activesupport'
 
 class String
   def not_empty?
